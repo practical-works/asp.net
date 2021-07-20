@@ -1,0 +1,6 @@
+C:\Users\Ambratolm\Desktop\ASP_Tests\WebApplication1\bin\WebApplication1.dll
+C:\Users\Ambratolm\Desktop\ASP_Tests\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Ambratolm\Desktop\ASP_Tests\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Ambratolm\Desktop\ASP_Tests\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Ambratolm\Desktop\ASP_Tests\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Ambratolm\Desktop\ASP_Tests\WebApplication1\obj\Debug\WebApplication1.dll.licenses

@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Web Application Sample</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <asp:Menu ID="Menu1" runat="server" Height="38px" Width="80%" 
+            Orientation="Horizontal" style="font-size: xx-large">
+                <DynamicHoverStyle ForeColor="#FF9900" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/home.aspx" Text="Home" Value="Home" 
+                        ToolTip="Got to home page (index)" ImageUrl="~/Images/house.png"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/account.aspx" Text="Account" Value="Account" 
+                        ToolTip="Go to account management page" 
+                        ImageUrl="~/Images/account_menu.png"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/about.aspx" Text="About" Value="About" 
+                        ToolTip="Go to related informations page" 
+                        ImageUrl="~/Images/information.png"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#EFEFEF" BorderColor="#CCCCCC" BorderStyle="Solid" 
+                    BorderWidth="1px" Font-Bold="False" ForeColor="#FF9900" />
+                <StaticMenuItemStyle HorizontalPadding="10px" ItemSpacing="500px" 
+                    VerticalPadding="10px" />
+                <StaticSelectedStyle BackColor="Silver" ForeColor="#666666" />
+            </asp:Menu>
+        <br />
+        <br />
+        <div style="margin: auto; padding: 10px 20px 20px 10px; border: medium solid #333333; background-color: #666666; font-family: consolas; color: #FFFFFF; font-weight: bold;">
+         <asp:Label ID="Label_infos" runat="server" 
+            style="font-family: consolas; font-weight: 700; color: #FFFFFF;" 
+            Text="_infos_"></asp:Label>
+        </div>       
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <br />
+        ____________________________________________________<br />
+        <p><em><strong>by Ambratolm 
+            <asp:Label ID="Label_datetime" runat="server" Text="_datetime_"></asp:Label>
+            &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" 
+                onclick="LinkButton1_Click">End session</asp:LinkButton>
+            </strong></em>
+        </p>
+    </div>
+    </form>
+</body>
+</html>
